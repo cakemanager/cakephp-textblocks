@@ -45,6 +45,14 @@ class TextblocksTable extends Table
     public function postType()
     {
         return [
+            'formFields' => [
+                'id',
+                'alias',
+                'title',
+                'body' => [
+                   'rows' => 20
+                ]
+            ],
             'filters' => [
                 'alias'
             ]
