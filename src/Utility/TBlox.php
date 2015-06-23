@@ -41,7 +41,7 @@ class TBlox
         }
         $content = self::get($alias, 'body');
 
-        return Text::insert($content, $vars);
+        return Text::insert(nl2br($content), $vars);
     }
 
     public static function model($model = null)
